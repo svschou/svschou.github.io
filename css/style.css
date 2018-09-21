@@ -1,0 +1,34 @@
+h1 {
+  color: teal;
+  font-family: "Arial", Arial, sans-serif;
+}
+
+h2 {
+  color: mediumaquamarine;
+  font-family: "Arial", Arial, sans-serif;
+}
+
+nav li{
+  display: inline-block;
+  width: 20%;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: teal;
+  font-family: "Arial", Arial, sans-serif;
+}
+
+.current {
+  color: white;
+  background-color: teal;
+}
+
+img{
+  width: 20%;
+}
+
+p {
+  font-family: "Arial", Arial, sans-serif;
+}
