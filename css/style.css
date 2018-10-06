@@ -1,3 +1,8 @@
+@Quicksand {
+       font-family: "Quicksand";
+       src: url(location/filename.ttf);
+}
+
 h1 {
   color: #275B53;
   font-family: 'Quicksand', sans-serif;
