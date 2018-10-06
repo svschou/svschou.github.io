@@ -1,28 +1,42 @@
 h1 {
-  color: teal;
-  font-family: "Arial", Arial, sans-serif;
+  color: #275B53;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h1.home-title {
+  color: white;
 }
 
 h2 {
-  color: mediumaquamarine;
-  font-family: "Arial", Arial, sans-serif;
+  color: #275B53;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h3 {
+  color: #F6B521;
+  font-family: 'Quicksand', sans-serif;
 }
 
 nav li{
   display: inline-block;
-  width: 20%;
+  width: 15%;
   text-align: center;
 }
 
 nav a {
   text-decoration: none;
-  color: teal;
-  font-family: "Arial", Arial, sans-serif;
+  color: #729E8F;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14pt;
+}
+
+nav a.home {
+  color: white;
 }
 
 .current {
   color: white;
-  background-color: teal;
+  background-color: #729E8F;
 }
 
 img{
@@ -30,5 +44,90 @@ img{
 }
 
 p {
-  font-family: "Arial", Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#photo-bar {
+  display:flex;
+  width: 100vw;
+  height: 25vh;
+  background: blue;
+}
+.photo {
+  background: blue;
+}
+
+.intro-text {
+  background: teal;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+}
+
+.intro-text.personal {
+grid-column-start:1;
+grid-column-end: 3;
+grid-row-start: 2;
+}
+
+
+.nav-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+}
+
+.nav-logo {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.nav-item {
+  text-align: center;
+}
+
+.home-background {
+  background-image: url("../images/background_image.jpg");
+  background-size: cover;
+}
+
+.project_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.project_item {
+  /*background: lightblue;*/
+  grid-column-start: 2;
+  grid-column-end: span 2;
+}
+.project_item.left {
+  grid-column-start: 2;
+  grid-column-end: span 2;
+  text-align: right;
+}
+
+.project_desc {
+  /*background: teal;*/
+  grid-column-start: 1;
+  grid-column-end: span 1;
+}
+.project_desc.right {
+  grid-column-start: 4;
+  grid-column-end: span 1;
+}
+
+footer {
+  text-align: center;
+}
+
+footer.home {
+  text-align: end;
+}
+
+.fab{
+  color: #729E8F;
+}
+
+.fas{
+  color: #729E8F;
 }

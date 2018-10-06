@@ -6,44 +6,88 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="shortcut icon" href="images/logo.jpg">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quicksand" rel="stylesheet">
   </head>
 
   <body>
     <header>
       <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="data_viz.html" class="current">Data Visualization</a></li>
-          <li><a href="graphic_design.html">Graphic Design</a></li>
-          <li><a href="contact.html">Contact Me</a></li>
-        </ul>
+        <div class="nav-container col-sm-12">
+          <div class="nav-logo">
+            <a href="home.html"> <img src="./images/nav_logo.png"/></a>
+          </div>
+          <div class="nav-item">
+            <a href="index.html">About</a>
+          </div>
+          <div class="nav-item">
+            <a href="data_viz.html" class="current">Data Visualization</a>
+          </div>
+          <div class="nav-item">
+            <a href="graphic_design.html">Graphic Design</a>
+          </div>
+
+          <div class="nav-item">
+            <a href="resume.html">Resume</a>
+          </div>
+        </div>
       </nav>
-      <h1>Steph Schouman</h1>
     </header>
 
     <h2>Data Visualizations</h2>
-    <p>
-      Check out some of my data driven projects below:
-    </p>
-    <p>Physician Network Diagram</p>
-    <img src="./images/data_viz_images/physician_network_diagram_1.PNG" alt="Physician Network Diagram 1"/>
-    <img src="./images/data_viz_images/physician_network_diagram_1.PNG" alt="Physician Network Diagram 2"/>
 
-    <p>Attributed Populations Demgographics</p>
-    <img src="./images/data_viz_images/AttribPopMonthly.PNG" alt="Attributed Populations Project table"/>
-    <img src="./images/data_viz_images/AttribPopMonthlySummaryScreenshot.PNG" alt="Attributed Populations Project first report"/>
-    <img src="./images/data_viz_images/AttribPopProductScreenshot.PNG" alt="Attributed Populations Project product report"/>
+    <div class="project_container col-sm-12">
+      <div class="project_desc">
+        <h3>Physician Network Diagram</h3>
+        <p>Trinity Health - Population Health Analytics</p>
+      </div>
+      <div class="project_item">
+        <img src="./images/data_viz_images/physician_network_diagram_1.PNG" alt="Physician Network Diagram 1"/>
+        <img src="./images/data_viz_images/physician_network_diagram_1.PNG" alt="Physician Network Diagram 2"/>
+      </div>
+      </div>
 
-    <p>Isometric Community Health Model</p>
-    <img src="./images/data_viz_images/Health_Plan_Included.jpeg" alt="Isometric Community Health Model screenshot"/>
+      <div class="project_container col-sm-12">
+        <div class="project_item left">
+          <img src="./images/data_viz_images/AttribPopMonthly.PNG" alt="Attributed Populations Project table"/>
+          <img src="./images/data_viz_images/AttribPopMonthlySummaryScreenshot.PNG" alt="Attributed Populations Project first report"/>
+          <img src="./images/data_viz_images/AttribPopProductScreenshot.PNG" alt="Attributed Populations Project product report"/>
+        </div>
+        <div class="project_desc right">
+          <h3>Attributed Populations Demographics</h3>
+          <p>Trinity Health - Population Health Analytics</p>
+        </div>
+        </div>
 
-    <p>Health-Related Google Search Analysis</p>
-    <img src="./images/data_viz_images/health_data_scatter.png" alt="Scatterplot of health-related Google searches"/>
-    <img src="./images/data_viz_images/health_data_heatmap.png" alt="Heatmap and correlations of health-related Google search categories"/>
-    <img src="./images/data_viz_images/health_data_biplot.png" alt="Biplot of health-related Google search categories"/>
-    <img src="./images/data_viz_images/health_data_map.png" alt="Map of United States with states colored based on correlation of health-related Google searches"/>
-    <p>Read my full report on health-related Google searches here:</p>
-    <iframe src="./docs/svschou_370_final_report.pdf"></iframe>
+      <div class="project_container col-sm-12">
+        <div class="project_desc">
+          <h3>Isometric Community Health Model</h3>
+          <p>Trinity Health - Population Health Analytics</p>
+        </div>
+        <div class="project_item">
+          <img src="./images/data_viz_images/Health_Plan_Included.jpeg" alt="Isometric Community Health Model screenshot"/>
+        </div>
+      </div>
 
+      <div class="project_container col-sm-12">
+        <div class="project_item left">
+          <img src="./images/data_viz_images/health_data_scatter.png" alt="Scatterplot of health-related Google searches"/>
+          <img src="./images/data_viz_images/health_data_heatmap.png" alt="Heatmap and correlations of health-related Google search categories"/>
+          <img src="./images/data_viz_images/health_data_biplot.png" alt="Biplot of health-related Google search categories"/>
+          <img src="./images/data_viz_images/health_data_map.png" alt="Map of United States with states colored based on correlation of health-related Google searches"/>
+        </div>
+        <div class="project_desc right">
+          <h3>Health-Related Google Search Analysis</h3>
+          <p>SI 370 - Data Manipulation</p>
+          <p>Read my full report on health-related Google searches here:</p>
+          <iframe src="./docs/svschou_370_final_report.pdf"></iframe>
+        </div>
+      </div>
+    <footer>
+      <a href="https://www.facebook.com/steph.schouman"><i class="fab fa-facebook-square fa-3x" aria-label="Facebook icon"></i></a>
+      <a href="https://twitter.com/stephschou"><i class="fab fa-twitter-square fa-3x" aria-label="Twitter icon"></i></a>
+      <a href="https://twitter.com/stephschou"><i class="fab fa-github-square fa-3x" aria-label="Github icon"></i></a>
+      <a href="https://www.linkedin.com/in/stephanie-schouman-ab0772127/"><i class="fab fa-linkedin fa-3x" aria-label="LinkedIn icon"></i></a>
+      <a href="mailto:svschou@umich.edu"><i class="fas fa-envelope-square fa-3x" aria-label="Email icon"></i></a>
+    </footer>
   </body>
 </html>
