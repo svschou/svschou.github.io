@@ -86,7 +86,7 @@ grid-row-start: 2;
 }
 
 .home-background {
-  background-image: url("../images/background_image.jpg");
+  background-image: url("./../images/background_image.jpg");
   background-size: cover;
 }
 
