@@ -1,6 +1,6 @@
 @Quicksand {
        font-family: "Quicksand";
-       src: url(location/filename.ttf);
+       src: url(./Quicksand-Regular.ttf);
 }
 
 h1 {
