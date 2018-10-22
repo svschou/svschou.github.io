@@ -1,8 +1,3 @@
-@Quicksand {
-       font-family: "Quicksand";
-       src: url(./Quicksand-Regular.ttf);
-}
-
 h1 {
   color: #275B53;
   font-family: 'Quicksand', sans-serif;
@@ -91,7 +86,7 @@ grid-row-start: 2;
 }
 
 .home-background {
-  background-image: url("./../images/background_image.jpg");
+  background-image: url("../images/background_image.jpg");
   background-size: cover;
 }
 
