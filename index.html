@@ -6,11 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" type = "text/css" href = "./css/default.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="css/lightbox.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <link rel="shortcut icon" href="images/logo.jpg">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|PT+Mono|PT+Sans" rel="stylesheet">
   </head>
 
   <body>
@@ -21,36 +26,49 @@
             <a href="home.html" aria-label="Home page link"> <img src="./images/nav_logo.png" alt="home logo"/></a>
           </div>
           <div class="nav-item">
-            <a href="index.html" class="current">About</a>
+            <a href="index.html" class="current">ABOUT</a>
           </div>
           <div class="nav-item">
-            <a href="data_viz.html">Data Visualization</a>
+            <a href="data_viz.html">DATA VISUALIZATION</a>
           </div>
           <div class="nav-item">
-            <a href="graphic_design.html">Graphic Design</a>
+            <a href="graphic_design.html">GRAPHIC DESIGN</a>
           </div>
           <div class="nav-item">
-            <a href="resume.html">Resume</a>
+            <a href="resume.html">RESUME</a>
           </div>
         </div>
       </nav>
     </header>
-
-    <h1>About Me</h1>
+    <main>
+    <h1>ABOUT ME</h1>
     <div class="photo-bar">
-      <img src="./images/photo_bar_01.jpg" class="photo" alt="Welcome picture me of the Michigan Stadium"/>
-      <img src="./images/photo_bar_02.jpg" class="photo" alt="My friends and I in the front row at the Big House"/>
+      <img src="./images/profile_pic.png" class="profile" alt="Welcome picture me of the Michigan Stadium"/>
+    </div>
+    <p tabindex="0"> Hi there! I'm Steph Schouman and this is my portfolio. I'm in the University of Michigan School of Information studying Information Analysis with a minor in Applied Statistics. I'm interested in how data analysis can be applied in the healthcare field to improve healthcare systems and to better the patient experience. With work experience in both healthcare and academia, I hope to create analyses and visualizations that help better the understanding of data.</p>
+
+    <div class="gallery3">
+      <img tabindex="0" src="./images/photo_bar_02.jpg" class="gallery3" alt="My friends and I in the front row at the Big House"/>
+      <img tabindex="0" src="./images/photo_bar_03.jpg" class="gallery3" alt="My friends and I in the Big House after the game"/>
+      <img tabindex="0" src="./images/photo_bar_04.jpg" class="gallery3" alt="My sister and I in the Big House dancing after the game"/>
     </div>
 
-    <p> Hi there! I'm Steph Schouman and this is my portfolio. I'm in the University of Michigan School of Information studying Information Analysis with a minor in Applied Statistics. I'm interested in how data analysis can be applied in the healthcare field to improve healthcare systems and to better the patient experience.</p>
+    <p tabindex="0">On campus, I am an instructional aide for the School of Information, a senior student leader of University Students Against Rape and a site leader for St. Mary’s Student Parish Alternative Spring Break program. In my free time you can find me studying in North Quad, drinking chai lattes at Espresso Royale, or watching football in the Big House. In addition to Michigan football, I'm a lover of cats, podcasts, and blueberry donuts.</p>
 
-    <div class="photo-bar">
-    <img src="./images/photo_bar_03.jpg" class="photo" alt="My friends and I in the Big House after the game"/>
-    <img src="./images/photo_bar_04.jpg" class="photo" alt="My sister and I in the Big House dancing after the game"/>
+    <div class="skills-container">
+        <div class="skill one" tabindex="0" id="one" innterHTML="HOBBIES" onfocus = "upDateOne(this)" onmouseover="upDateOne(this)" onblur = "unDoOne()" onmouseleave="unDoOne()">HOBBIES</div>
+
+        <div class="skill two" tabindex="0" id="two" innterHTML="HOMETOWN" onfocus = "upDateTwo(this)" onmouseover="upDateTwo(this)" onblur = "unDoTwo()" onmouseleave="unDoTwo()">HOMETOWN</div>
+
+        <div class="skill three" tabindex="0" id="three" innterHTML="FAVORITE PODCASTS" onfocus = "upDateThree(this)" onmouseover="upDateThree(this)" onblur = "unDoThree()" onmouseleave="unDoThree()">FAVORITE PODCASTS</div>
+
+        <div class="skill four" tabindex="0" id="four" innterHTML="PERSONALITY TYPES" onfocus = "upDateFour(this)" onmouseover="upDateFour(this)" onblur = "unDoFour()" onmouseleave="unDoFour()">PERSONALITY TYPES</div>
+
+        <div class="skill five" tabindex="0" id="five" innterHTML="FAVORITE COLORS" onfocus = "upDateFive(this)" onmouseover="upDateFive(this)" onblur = "unDoFive()" onmouseleave="unDoFive()" >FAVORITE COLORS</div>
+
+        <div class="skill six" tabindex="0" id="six" innterHTML="FAVORITE PROGRAMMING LANGUAGES" onfocus = "upDateSix(this)" onmouseover="upDateSix(this)" onblur = "unDoSix()" onmouseleave="unDoSix()">FAVORITE PROGRAMMING LANGUAGES</div>
     </div>
-
-    <p>In my free time you can find me studying in North Quad or watching football in the Big House. In additon to Michigan football, I'm a lover of cats, podcasts, blueberry donuts and chai lattes.</p>
-
+    <main>
 
     <footer>
       <a href="https://www.facebook.com/steph.schouman" aria-label="Facebook link"><i class="fab fa-facebook-square fa-3x"></i></a>
@@ -59,5 +77,44 @@
       <a href="https://www.linkedin.com/in/stephanie-schouman-ab0772127/" aria-label="LinkedIn link"><i class="fab fa-linkedin fa-3x"></i></a>
       <a href="mailto:svschou@umich.edu" aria-label="Email link"><i class="fas fa-envelope-square fa-3x"></i></a>
     </footer>
+
+  <script type="text/javascript">
+  function upDateOne(i){
+    document.getElementById('one').innerHTML="READING, SKETCHING, EXPLORING ANN ARBOR";}
+
+  function unDoOne(i){
+    document.getElementById('one').innerHTML = "HOBBIES";}
+
+  function upDateTwo(i){
+    document.getElementById('two').innerHTML="ZEELAND, MICHIGAN";}
+
+  function unDoTwo(i){
+    document.getElementById('two').innerHTML = "HOMETOWN";}
+
+  function upDateThree(i){
+    document.getElementById('three').innerHTML="MY FAVORITE MURDER, HARRY POTTER AND THE SACRED TEXT, CALL YOUR GIRLFRIEND";}
+
+  function unDoThree(i){
+    document.getElementById('three').innerHTML = "FAVORITE PODCASTS";}
+
+  function upDateFour(i){
+    document.getElementById('four').innerHTML="INFJ - THE ADVOCATE, TYPE 2 - THE HELPER, GRYFFINDOR";}
+
+  function unDoFour(i){
+    document.getElementById('four').innerHTML = "PERSONALITY TYPES";}
+
+  function upDateFive(i){
+    document.getElementById('five').innerHTML="OLIVE GREEN, NAVY BLUE, MUSTARD YELLOW";}
+
+  function unDoFive(i){
+    document.getElementById('five').innerHTML = "FAVORITE COLORS";}
+
+  function upDateSix(i){
+    document.getElementById('six').innerHTML="PYTHON, SQL, R";}
+
+  function unDoSix(i){
+    document.getElementById('six').innerHTML = "FAVORITE PROGRAMMING LANGUAGES";}
+</script>
+
   </body>
 </html>
