@@ -73,7 +73,6 @@ img.project{
 
 img.home{
   width: 60vw;
-
 }
 
 
@@ -171,6 +170,7 @@ a {
 }
 
 .home-background {
+  background-color: white;
   background-image: url("../images/mobile_home.png");
   background-size: cover;
 }
