@@ -58,6 +58,7 @@ nav li{
 nav a {
   text-decoration: none;
   color: white;
+  background-color: #304859;
   font-family: 'Oswald', sans-serif;
   font-size: 14pt;
   -webkit-margin-before: 0.5em;
@@ -100,7 +101,6 @@ img.home{
 }
 
 .skill {
-  background-color: lightgreen;
   display: grid;
   height: 33vw;
   width: 33vw; 
@@ -166,7 +166,6 @@ img.home{
 
 .home-background {
   background-color: white;
-  background-size: cover;
 }
 
 
@@ -230,6 +229,9 @@ footer.home {
 
   nav a {
     color: #677973;
+  }
+  a.home {
+  color: #304859;
   }
 
   nav a.home {
