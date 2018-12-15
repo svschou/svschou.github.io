@@ -36,6 +36,19 @@ h3 {
 
 }
 
+p {
+  font-family: 'PT Sans', sans-serif;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+}
+
+a {
+  font-family: 'PT Sans', sans-serif;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  color: #677973;
+}
+
 nav li{
   display: inline-block;
   width: 15%;
@@ -51,10 +64,6 @@ nav a {
   -webkit-margin-after:  0.5em;
   -webkit-padding-before: 0.5em;
   -webkit-padding-after: 0.5em;
-}
-
-nav a.home {
-  color: white;
 }
 
 .current {
@@ -73,20 +82,6 @@ img.project{
 
 img.home{
   width: 60vw;
-}
-
-
-p {
-  font-family: 'PT Sans', sans-serif;
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-}
-
-a {
-  font-family: 'PT Sans', sans-serif;
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  color: #677973;
 }
 
 #photo-bar {
@@ -228,6 +223,9 @@ footer.home {
   width: 100%;
 }
 
+
+
+
 @media screen and (min-width: 600px) {
 
   nav a {
@@ -242,6 +240,7 @@ footer.home {
   height: 7vh;
   background-color: white;
   opacity: 50;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
 }
 
   .current {
@@ -257,10 +256,6 @@ footer.home {
 
   .profile {
     width: 40%;
-  }
-
-  .nav-container {
-    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
   }
 
   .nav-logo {
@@ -292,9 +287,12 @@ footer.home {
   }
 
 
+
+
+
 @media screen and (min-width: 800px) {
     .nav-container {
-    background-color: transparent;
+    background-color: white;
     }
     .photo {
       width: 25vw;
