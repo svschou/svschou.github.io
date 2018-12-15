@@ -13,7 +13,7 @@ h1 {
 }
 
 h1.home-title {
-  color: #7E748C;
+  color: #677973;
 }
 
 h2 {
@@ -28,7 +28,7 @@ h2 {
 
 h3 {
   font-size: 1.17em;
-  color: #7E748C;
+  color: #677973;
   font-family: 'Oswald', sans-serif;
   -webkit-margin-before: 1__qem;
   -webkit-margin-after: 1em;
@@ -73,7 +73,7 @@ img.project{
 
 img.home{
   width: 60vw;
-  
+
 }
 
 
@@ -87,7 +87,7 @@ a {
   font-family: 'PT Sans', sans-serif;
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
-  color: #7E748C;
+  color: #677973;
 }
 
 #photo-bar {
@@ -232,7 +232,7 @@ footer.home {
 @media screen and (min-width: 600px) {
 
   nav a {
-    color: #7E748C;
+    color: #677973;
   }
 
   nav a.home {
