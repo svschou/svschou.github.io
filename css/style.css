@@ -4,23 +4,23 @@ body {
 
 h1 {
   font-size: 2em;
-  color: #275B53;
-  font-family: 'Quicksand', sans-serif;
-  -webkit-margin-before: 0.67__qem;
+  color: #677973;
+  font-family: 'Oswald', sans-serif;
+  -webkit-margin-before: 1em;
   -webkit-margin-after: 0.67em;
   text-align: center;
 
 }
 
 h1.home-title {
-  color: white;
+  color: #7E748C;
 }
 
 h2 {
   font-size: 1.5em;
-  color: #275B53;
-  font-family: 'Quicksand', sans-serif;
-  -webkit-margin-before: 0.83__qem;
+  color: #665E70;
+  font-family: 'Oswald', sans-serif;
+  -webkit-margin-before: 0.83em;
   -webkit-margin-after: 0.83em;
   text-align: center;
 
@@ -28,8 +28,8 @@ h2 {
 
 h3 {
   font-size: 1.17em;
-  color: #F6B521;
-  font-family: 'Quicksand', sans-serif;
+  color: #7E748C;
+  font-family: 'Oswald', sans-serif;
   -webkit-margin-before: 1__qem;
   -webkit-margin-after: 1em;
   text-align: center;
@@ -45,12 +45,12 @@ nav li{
 nav a {
   text-decoration: none;
   color: white;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-size: 14pt;
-  -webkit-margin-before: 1em;
-  -webkit-margin-after: 1em;
-  -webkit-padding-before: 1em;
-  -webkit-padding-after: 1em;
+  -webkit-margin-before: 0.5em;
+  -webkit-margin-after:  0.5em;
+  -webkit-padding-before: 0.5em;
+  -webkit-padding-after: 0.5em;
 }
 
 nav a.home {
@@ -60,6 +60,7 @@ nav a.home {
 .current {
   font-weight: bolder;
   font-style: italic;
+  color: #F0DCC7;
 }
 
 img{
@@ -70,10 +71,23 @@ img.project{
   width: 20%;
 }
 
+img.home{
+  width: 60vw;
+  
+}
+
+
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   -webkit-margin-before: 1em;
   -webkit-margin-after: 1em;
+}
+
+a {
+  font-family: 'PT Sans', sans-serif;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  color: #7E748C;
 }
 
 #photo-bar {
@@ -83,14 +97,67 @@ p {
   background: blue;
 }
 
+.skills-container {
+  max-width: 70vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skill {
+  background-color: lightgreen;
+  display: grid;
+  height: 33vw;
+  width: 33vw; 
+  margin: 1vw;
+  color: #304859;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill.one {
+  background-color: #AFC0C6;
+}
+
+.skill.two {
+  background-color: #F0DCC7;
+}
+
+.skill.three {
+  background-color: #A39CAB;
+}
+
+.skill.four {
+  background-color: #AFC0C6;
+}
+
+.skill.five {
+  background-color: #F0DCC7;
+}
+
+.skill.six {
+  background-color: #A39CAB;
+}
+
 .photo {
   width: 45vw;
 }
 
+.profile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
 .nav-container {
   display: grid;
+  height: 22vh;
   grid-template-columns: 1fr;
-  background-color: #275B53;
+  background-color: #304859;
   opacity: 50;
 }
 
@@ -104,37 +171,10 @@ p {
 }
 
 .home-background {
-  background-image: url("../images/profile_pic.jpg");
+  background-image: url("../images/mobile_home.png");
   background-size: cover;
 }
 
-.project_container {
-  grid-template-columns: 1fr;
-  border: #275B53;
-}
-
-.project_container {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.project_item {
-  /*background: lightblue;*/
-  grid-column-start: 1;
-  text-align: center;
-}
-.project_item.left {
-  grid-column-start: 1;
-  text-align: center;
-}
-
-.project_desc {
-  /*background: teal;*/
-  grid-column-start: 1;
-}
-.project_desc.right {
-  grid-column-start: 1;
-}
 
 footer {
   text-align: center;
@@ -145,35 +185,72 @@ footer.home {
 }
 
 .fab{
-  color: #729E8F;
+  color: #304859;
 }
 
 .fas{
-  color: #729E8F;
+  color: #304859;
+}
+
+
+.gallery{
+  width: 85%;
+  margin:0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 10px;
+}
+
+.gallery img{
+  width: 100%;
+}
+
+.gallery2 {
+  width: 95%;
+  margin:0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10px;
+}
+
+.gallery2 img{
+  width: 100%;
+}
+
+.gallery3 {
+  width: 95%;
+  margin:0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+}
+
+.gallery3 img{
+  width: 100%;
 }
 
 @media screen and (min-width: 600px) {
 
   nav a {
-    color: #729E8F;
+    color: #7E748C;
   }
 
+  nav a.home {
+  color: #304859;
+  }
+
+  .nav-container {
+  height: 7vh;
+  background-color: transparent;
+  opacity: 50;
+}
+
   .current {
-    color: #729E8F;
+    color: #304859;
   }
 
   .home-background {
-    background-image: url("../images/background_image.jpg");
-  }
-
-  h1 {
-      text-align: initial;
-  }
-  h2 {
-      text-align: initial;
-  }
-  h3 {
-      text-align: initial;
+    background-image: url("../images/desktop_home.png");
   }
 
   .photo {
@@ -183,9 +260,12 @@ footer.home {
     width: 40%;
   }
 
+  .profile {
+    width: 30%;
+  }
+
   .nav-container {
     grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-    background-color: white;
   }
 
   .nav-logo {
@@ -193,29 +273,29 @@ footer.home {
     grid-column-end: 2;
   }
 
-  .project_container {
-    grid-template-columns: 1fr 1fr;
-    border: #275B53;
-  }
-  .project_item {
-    /*background: lightblue;*/
-    grid-column-start: 1;
-      grid-column-end: span 1;
-    text-align: center;
-  }
-  .project_item.left {
-    grid-column-start: 2;
-      grid-column-end: span 1;
-    text-align: center;
+  .skills-container {
+  max-width: 87vw;
+  grid-template-columns: 1fr 1fr 1fr;
   }
 
-  .project_desc {
-    /*background: teal;*/
-    grid-column-start: 1;
+  .skill {
+  height: 27vw;
+  width: 27vw; 
+  margin: 1vw;
   }
-  .project_desc.right {
-    grid-column-start: 2;
-}
+
+  .skill.four {
+  background-color: #A39CAB;
+  }
+
+  .skill.five {
+  background-color: #AFC0C6;
+  }
+
+  .skill.six {
+  background-color: #F0DCC7;
+  }
+
 
 @media screen and (min-width: 800px) {
     .nav-container {
@@ -225,28 +305,30 @@ footer.home {
       width: 25vw;
     }
 
-    .project_container {
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-    .project_item {
-      /*background: lightblue;*/
-      grid-column-start: 2;
-      grid-column-end: span 2;
-    }
-    .project_item.left {
-      grid-column-start: 2;
-      grid-column-end: span 2;
-      text-align: right;
+    .profile {
+    width: 20%;
     }
 
-    .project_desc {
-      /*background: teal;*/
-      grid-column-start: 1;
-      grid-column-end: span 1;
-    }
-    .project_desc.right {
-      grid-column-start: 4;
-      grid-column-end: span 1;
+    .skills-container {
+    max-width: 96vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
 
+    .skill {
+    height: 14vw;
+    width: 14vw; 
+    margin: 1vw;
+    }
+
+    .skill.four {
+    background-color: #AFC0C6;
+    }
+
+    .skill.five {
+    background-color: #F0DCC7;
+    }
+
+    .skill.six {
+    background-color: #A39CAB;
+    }
   }
