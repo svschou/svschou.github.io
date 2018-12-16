@@ -173,10 +173,6 @@ footer {
   text-align: center;
 }
 
-footer.home {
-  text-align: end;
-}
-
 .fab{
   color: #304859;
 }
@@ -229,6 +225,7 @@ footer.home {
 
   nav a {
     color: #677973;
+    background-color: white;
   }
   a.home {
   color: #304859;
@@ -243,7 +240,7 @@ footer.home {
   background-color: white;
   opacity: 50;
   grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-}
+  }
 
   .current {
     color: #304859;
@@ -293,9 +290,7 @@ footer.home {
 
 
 @media screen and (min-width: 800px) {
-    .nav-container {
-    background-color: white;
-    }
+
     .photo {
       width: 25vw;
     }
